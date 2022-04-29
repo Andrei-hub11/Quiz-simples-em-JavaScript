@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --cor-de-fundo: #030b35;
+  --cor-clara: #ffffff;
+  --cor-clara-secundaria: #dbf0fe;
+  --cor-de-fundo-btns: #040435;
+  --cor-cinza-sombria: #363636;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+}
+
+.box {
+  color: var(--cor-clara);
+  background: var(--cor-clara);
+  width: 20rem;
+  height: 34rem;
+  top: 50%;
+  left: 50%;
+  min-width: 350px;
+  position: absolute;
+  min-height: 100px;
+  transform: translate(-50%, -50%);
+}
+
+.box__pergunta {
+  height: 4rem;
+  padding: 0.5rem 0.5rem 3.4rem 0.5rem;
+  background: red;
+  overflow: hidden;
+}
+
+.box__title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-align: center;
+  background: -webkit-linear-gradient(#84a9ff, #deecfe);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.1rem;
+  overflow: hidden;
+}
+
+.box__btn {
+  display: grid;
+  grid-template-columns: 30rem;
+  grid-template-rows: 3rem 3rem 3rem 3rem;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.box__btn-resp {
+  background: rgba(41, 16, 88, 0.5);
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: var(--cor-clara-secundaria);
+  border-radius: 0.8rem;
+  cursor: pointer;
+  border-style: none;
+  overflow: hidden;
+  outline: none;
+}
+
+.box__control {
+  display: grid;
+  grid-template-columns: 9rem 9rem;
+  margin-top: 2rem;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.box__control-btn {
+  color: var(--cor-clara-secundaria);
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  padding: 0.6rem 0.4rem 0.6rem 0.4rem;
+  text-align: center;
+  border-radius: 1rem;
+  border-style: none;
+  background: var(--cor-de-fundo-btns);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.box__control-btn:active {
+  transform: translateY(3px);
+  background-color: var(--cor-cinza-sombria);
+}
